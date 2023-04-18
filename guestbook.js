@@ -16,7 +16,7 @@ const guestbook = {
     console.log('Sending', name, email, comment)
     return $.ajax({
       type: 'PUT',
-      url: `${apiUrl}/save-guestbook-entry-sequence`,
+      url: `${apiUrl}/save-guest-book-entry-sequence`,
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
